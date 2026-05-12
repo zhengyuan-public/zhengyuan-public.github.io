@@ -2,38 +2,36 @@
 
 source "https://rubygems.org"
 
-gem "jekyll-theme-chirpy", ">= 7.5.0"
+# Use the latest Chirpy theme version
+gem "jekyll-theme-chirpy", "~> 7.5"
 
-group :test do
-  gem "html-proofer", "~> 5.0"
-end
+# Testing and development tools
+gem "html-proofer", "~> 5.0", group: :test
+gem "webrick", "~> 1.8"
+gem "rack"
+gem "rackup"
 
+# Custom plugins for your site functionality
 group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-pdf-embed"
-  # gem "jekyll-admin"
   gem "jekyll-scholar"
   gem "jekyll-latex"
-  gem 'jekyll-asciinema'
+  gem "jekyll-asciinema"
 end
 
-# Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
-# and associated library.
-platforms :mingw, :x64_mingw, :mswin, :jruby do
+# Support for specific data processing
+gem "csv"
+gem "observer"
+
+# Windows and JRuby support (Updated v7.5.0 logic)
+platforms :windows, :jruby do
   gem "tzinfo", ">= 1", "< 3"
   gem "tzinfo-data"
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem "wdm", "~> 0.2.0", :platforms => [:windows]
 
-# Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
-# do not have a Java counterpart.
+# Compatibility for JRuby builds
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
-
-gem "webrick", "~> 1.8"
-gem 'rack'
-gem 'rackup'
-
-gem 'csv'
-gem 'observer'

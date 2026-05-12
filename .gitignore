@@ -1,3 +1,6 @@
+# macOS files
+.DS_Store
+
 # Bundler cache
 .bundle
 vendor
@@ -5,9 +8,8 @@ Gemfile.lock
 
 # Jekyll cache
 .jekyll-cache
+.jekyll-metadata
 _site
-tmp
-log
 
 # RubyGems
 *.gem
@@ -18,13 +20,11 @@ package-lock.json
 
 # IDE configurations
 .idea
-.vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
 
 # Misc
+_sass/vendors
 assets/js/dist
-
-# DS_store
-.DS_store
-.ruby-version
-.jekyll-metadata
-.cloudbase
