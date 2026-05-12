@@ -67,8 +67,8 @@ When designing a parallel algorithm, it's important to pay attention to three th
 3. **Memory wall**: A growing discrepancy of processor speeds relative to memory speeds.
     - off-chip memory rates have not grown as fast as on-chip computation rates
     - there are two problems with memory (and communication): 
-        - latency: subject to fundamental limits, but can be hidden given sufﬁcient additional parallelism
-        - bandwidth
+        - latency: is subject to fundamental limits, but can be hidden given sufﬁcient additional parallelism.
+        - bandwidth: can be scaled in several ways, such as optical interconnections.
 
     > Algorithms need to be structured to **avoid memory access and communication as much as possible**, and fundamental limits on latency create even more requirements for parallelism.
     {: .prompt-tip }
@@ -106,3 +106,5 @@ Functionality and performance, across operating systems and compilers.
 
 ## Chapter 2. Background
 
+### Vocabulary
+There are two foundamental components: Tasks and Data. A task operates on data, either modifying it in place or creating new data. Dependencies between tasks need to be respected.
