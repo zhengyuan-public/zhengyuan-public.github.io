@@ -60,7 +60,7 @@ This text is ~~Strikethrough~~.
 I ==love== you so much.
 ```
 
-### Subscript and Subscript
+### Superscript and Subscript
 
 ```markdown
 y = a~1~x^2^ + b~1~
