@@ -47,7 +47,7 @@ This gives from 6 to 9 significant decimal digits precision.
 
 ### FP32 to Decimal
 
-![FP32](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Float_example.svg/1180px-Float_example.svg.png)
+![Floating-points Numbers](https://en.wikipedia.org/wiki/File:Float_example.svg)
 
 $$
 value = (-1)^{b_{31}} \times 2^{(b_{30}b_{29} \dots b_{23})_2 - 127} \times (1.b_{22}b_{21} \dots b_{0})_2
